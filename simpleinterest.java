@@ -1,14 +1,16 @@
-public class simpleinterest
-{
+import java.util.Scanner;
 
-    public static void main(String args[])
-    {
-        float p,r,t,si;
-        p=13000;r=12;t=2;
+public class simpleinterest {
+    public static void main(String args[]){
+        int principl,ri,t;
+        System.out.println("enter a principl, rate of interst,time peroid:  ");
+        Scanner myobj=new Scanner(System.in);
+        principl=myobj.nextInt();
+        ri=myobj.nextInt();
+        t=myobj.nextInt();
+        int si=(principl*ri*t)/100;
+        System.out.println("simple intrest is :"+si);
 
-        si=(p*r*t)/100;
-
-        System.out.println("simple interest is:"+si);
     }
     
 }
